@@ -1,0 +1,9 @@
+grades = [85, 90, 78, 92, 88]
+
+try:
+    index = int(input("Enter the index of the grade you want to access: "))
+    print("Selected Grade:", grades[index])
+except IndexError:
+    print("Error: The index you entered is out of range.")
+except ValueError:
+    print("Error: Please enter a valid integer index.")
